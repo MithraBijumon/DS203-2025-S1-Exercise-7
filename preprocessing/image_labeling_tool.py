@@ -16,7 +16,7 @@ import os
 # Directory where your 800x600 preprocessed images are stored
 IMAGE_DIRECTORY = "preprocessed_images"
 # The name of the output CSV file
-OUTPUT_CSV_FILE = "labels.csv"
+OUTPUT_CSV_FILE = "labels.csv"     #IMPORTANT: Name this as "labels_{your_name}.csv"
 # Grid dimensions
 GRID_ROWS = 8
 GRID_COLS = 8
