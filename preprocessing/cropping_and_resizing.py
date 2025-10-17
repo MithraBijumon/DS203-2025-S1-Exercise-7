@@ -15,7 +15,7 @@ from pulp import LpProblem, LpMaximize, LpVariable, value, PULP_CBC_CMD
 
 # --- CONFIGURATION ---
 # Directory where your original raw images are stored
-IMAGE_DIRECTORY = "images"
+IMAGE_DIRECTORY = "images"         #IMPORTANT: Make a folder names "images" and store ONLY the images you are going to work with
 # Directory where the processed 800x600 images will be saved
 OUTPUT_DIRECTORY = "preprocessed_images"
 # Target dimensions
