@@ -15,13 +15,17 @@ def resize_with_padding(img, target_w, target_h):
     target_aspect = target_w / target_h
 
     # scale image while keeping aspect ratio
-    if aspect > target_aspect:
-        new_w = target_w
-        new_h = int(target_w / aspect)
+    if w < target_w and h < target_h:
+        resized = img  # no scaling
+        new_w, new_h = w, h
     else:
-        new_h = target_h
-        new_w = int(target_h * aspect)
-        
+        if aspect > target_aspect:
+            new_w = target_w
+            new_h = int(target_w / aspect)
+        else:
+            new_h = target_h
+            new_w = int(target_h * aspect)
+            
     resized = cv2.resize(img, (new_w, new_h))
     
     # create black canvas (or white by using 255 instead of 0)
