@@ -7,8 +7,8 @@ from tqdm import tqdm # A progress bar! pip install tqdm
 
 # --- CONFIGURATION ---
 PREPROCESSED_DIR = "preprocessed_images"
-LABELS_FILE = "animal_grid.csv" # Your manually created labels
-OUTPUT_DATASET = "training_dataset.csv" # The file this script will create
+LABELS_FILE = "label_results.csv" # The manually created labels (Should be in the same folder as this python file)
+OUTPUT_DATASET = "training_dataset_baseline.csv" # The file this script will create
 
 GRID_ROWS = 8
 GRID_COLS = 8
